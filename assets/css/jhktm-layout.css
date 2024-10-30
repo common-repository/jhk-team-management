@@ -1,0 +1,109 @@
+
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+/* img { vertical-align: middle; border-style: none; box-sizing: border-box; max-width: 100%; height: auto; margin: 0px; padding: 0px; } */
+
+.team-members.wrapper{width: 100%; max-width: 800px; margin-inline: auto; font-family: arial; padding-inline: 15px;}
+.jhktm-content-list.item {margin-top: 15px; margin-bottom: 15px;}
+.jhktm-group{display: flex; align-items: flex-start; background-color: #ffffff; padding: 15px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1); border-radius: 6px; border: solid 1px #eeeeee; text-align: left;}
+.jhktm-thumb{max-width: 240px; margin-right: 25px;}
+.jhktm-thumb img{vertical-align: middle; border-style: none; box-sizing: border-box; max-width: 100%; height: auto; margin: 0px; padding: 0px;}
+.jhktm-body{-webkit-box-flex: 1; -ms-flex: 1; flex: 1;}
+.jhktm-body h4{font-size: 24px; margin: 0px; padding: 0px 0px 8px; font-weight: bold; cursor: pointer;}
+.jhktm-body h5{font-size: 16px; color: #666666; margin: 0px; padding: 0px 0px 15px; font-weight: normal;}
+ul.jhktm-list{margin: 0px; padding: 0px; }
+ul.jhktm-list li{list-style: none; padding: 6px 0px; margin: 0px; line-height: 1;}
+ul.jhktm-list li:last-child{ padding-bottom: 0px; }
+.jhktm-content-list .downloadprofile{background-color: #333333; border-radius: 4px; text-decoration: none !important; color: #ffffff !important; padding: 6px 12px; display: inline-block;}
+ul.jhktm-list  li.social{list-style: none;}
+ul.jhktm-list  li.social a{ margin-right: 10px; font-size: 24px; color: #333;}
+
+@media (max-width: 575px){
+  .jhktm-group{display: table; width: 100%; text-align: center; padding: 20px; }
+  .jhktm-thumb{margin-inline: auto; margin-bottom: 15px;}
+}
+
+.jhktm-main.grid{display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -8px; margin-left: -8px;}
+.jhktm-main.grid .jhktm-content-grid.item {flex: 0 0 auto; width: 33.33333333%; padding-right: 8px; padding-left: 8px; margin-top: 15px; margin-bottom: 15px;}
+.jhktm-content-grid .jhktm-group{ display: table; width: 100%; text-align: center; height: 100%; }
+.jhktm-content-grid .jhktm-thumb{margin-inline: auto; margin-bottom: 15px;}
+.jhktm-content-grid .jhktm-body h4{font-size: 20px;}
+.jhktm-content-grid .jhktm-body h5{padding: 0px 0px 10px;}
+
+.jhktm-detail-popup{display: none; 
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0; height: 100vh;}
+.jhktm-detail-overlay{background-color: #212121; position: fixed; z-index: 1; top: 0px; left: 0px; right: 0px; bottom: 0px; width: 100%; height: 100%; overflow: hidden !important; opacity: 0.7;}
+.jhktm-detail-panel{position: relative; top: 0px; height: 100%; z-index: 1; left: 0; right: 0;  width: 100%;
+  margin-inline: auto; overflow: hidden; overflow-y: auto;}
+.jhktm-detail-panel-content{background-color: #ffffff; /*position: absolute; top: 0px;*/ /*top: 100px;*/ margin: 1.75rem auto; /*margin: 100px auto;*/ padding: 25px; 
+  max-width: 650px; width: 100%; position: relative;}
+.jhktm-detail-panel-close{position: absolute; right: 10px; top: 5px; cursor: pointer;}
+.jhktm-detail-popup .jhktm-thumb{max-width: 300px; margin-right: 25px;}
+.jhktm-detail-popup .jhktm-details{display: flex; margin-top: 20px; align-items: flex-start; text-align: left;}
+.jhktm-detail-popup .member-content{margin-top: 20px; text-align: left;}
+
+/* .team-members.list{width: 800px;}
+.team-members.list .vertical-layout{margin: 0 0 60px; position: relative; transition: all .3s ease-in-out; box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);}
+.team-members.list .vertical-layout .member-profile-img{vertical-align: middle; text-align: center;}
+.team-members.list .vertical-layout .member-profile-img img{height: 100%; width: 100%; vertical-align: middle; object-fit: cover; max-width: 100%; border: none; padding: 15px;}
+.team-members.list .vertical-layout .member-profile-content{vertical-align: top; }
+.team-members.list .vertical-layout .member-profile-content p{margin: 0px; font-family: "Nunito", sans-serif; font-size: 18px;}
+.team-members.list .vertical-layout .member-profile-content h3{ margin: 0px; font-size: 30px; line-height: normal; font-family: "Source Serif 4", serif; text-transform: capitalize; font-weight: 700;}
+.team-members.list .vertical-layout .member-profile-content a{ color: #000;}
+.team-members.list .vertical-layout .member-profile-content h5{margin: 8px 0px 0px; font-size: 20px; font-weight: 700; font-family: "Nunito", sans-serif; text-transform: unset ;} 
+.team-members.list .vertical-layout i.fa-brands{font-family: 'Font Awesome 6 Brands Regular'; font-size: 22px;} 
+.team-members.list .vertical-layout i.fa-solid{font-family: 'Font Awesome 6 Free Solid'; font-size: 22px;} 
+.team-members.list .vertical-layout i.fa-regular{font-family: 'Font Awesome 6 Free Regular'; font-size: 22px;}  */
+
+/* .team-members.grid{width: 100%; max-width: 100%;}
+.team-members.grid .team-main-title{ margin: 0; font-size: 32px; line-height: normal; font-family: "Source Serif 4", serif; text-transform: capitalize; font-weight: 700;}
+.team-members.grid .team-main-title a{text-decoration: none;}
+.team-members.grid .team-members-content-details p{line-height: normal; margin: 0;}
+.team-members.grid .team-members-content-details h5{margin: 0; text-transform: none; font-size: 20px; font-family: "Nunito", sans-serif; font-weight: 600;}
+
+.team-members.grid .popup {
+    width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  }
+
+.team-members.grid .popup-content {
+  width: 80%;
+  overflow: auto;
+  padding: 50px;
+  background: white;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  }
+
+.team-members.grid .popup-content .close  {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    display: block;
+  }
+  .team-members.grid .popup-content .close span {
+    cursor: pointer;
+    position: fixed;
+    width: 20px;
+    height: 3px;
+    background: #099ccc;
+  }
+
+  .popup .popup-content .close span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .popup .popup-content .close span:nth-child(2) {
+    transform: rotate(135deg);
+  } */
